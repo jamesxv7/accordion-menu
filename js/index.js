@@ -13,8 +13,7 @@ for (var i = 0; i < hook.length; i++) {
 	hook[i].addEventListener("click", toogle);
 }
     
-function toogle() {     
-    
+function toogle() {  
   if (this.nextElementSibling.nodeType === 1   
     && nextElementSibling(this).hasClass('hide')) { 
     if (nextElementSibling(this).classList) {
@@ -22,22 +21,21 @@ function toogle() {
     } else {
       nextElementSibling(this).className = nextElementSibling(this).className.replace(new RegExp('(^|\\b)' + "hide" + '(\\b|$)', 'gi'), ' ');
     }
-      rotated = false;
+    rotated = false;
   }
   else {    
     nextElementSibling(this).className += " " + "hide";
-      rotated = true;
+    rotated = true;
   }
-    deg = rotated ? 0 : 180;r
+  
+  deg = rotated ? 0 : 180;
     
-    this.style.webkitTransform = 'rotate('+deg+'deg)'; 
-    this.style.mozTransform    = 'rotate('+deg+'deg)'; 
-    this.style.msTransform     = 'rotate('+deg+'deg)'; 
-    this.style.oTransform      = 'rotate('+deg+'deg)'; 
-    this.style.transform       = 'rotate('+deg+'deg)';         
+  this.style.webkitTransform = 'rotate('+deg+'deg)'; 
+  this.style.mozTransform = 'rotate('+deg+'deg)'; 
+  this.style.msTransform = 'rotate('+deg+'deg)'; 
+  this.style.oTransform = 'rotate('+deg+'deg)'; 
+  this.style.transform = 'rotate('+deg+'deg)'; 
 }
-
-    
 
 function nextElementSibling(el) {
     if (el.nextElementSibling) {

@@ -51,15 +51,15 @@ body {
   background-color:#eee;
 }
 
-.widget ul {
-  line-height:1.5;
-}
-
 .widget ul li:first-child .fa {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -webkit-transform: rotate(180deg); 
   transform: rotate(180deg);
+}
+
+.widget ul {
+  line-height:1.5;
 }
 
 .widget li {
